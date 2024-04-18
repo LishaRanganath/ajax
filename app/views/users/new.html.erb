@@ -1,0 +1,25 @@
+<%= javascript_include_tag ("add_user.js") %>
+
+
+<h1>New user</h1>
+
+<%= render "form", user: @user %>
+
+<br>
+
+<div>
+  <%= link_to "Back to users", users_path %>
+</div>
+
+<br>
+
+<hr>
+
+<br>
+
+<br>
+
+<h1>Users</h1>
+<div id="all_users">
+  <%= render partial: "all_users" %>
+</div>
